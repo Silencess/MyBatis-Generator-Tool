@@ -1,0 +1,1 @@
+java -jar Generator.jar >generator_log.txt 2>&1
