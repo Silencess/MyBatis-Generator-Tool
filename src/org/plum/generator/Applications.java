@@ -62,13 +62,13 @@ public class Applications {
 	public static void main(String[] args) {
 		Display display = Display.getDefault();
 		Shell shlMybatisgenerator = new Shell(SWT.CLOSE | SWT.MIN | SWT.TITLE);
-		shlMybatisgenerator.setImage(SWTResourceManager.getImage("C:\\Users\\Plum\\Desktop\\图标.jpg"));
+		shlMybatisgenerator.setImage(SWTResourceManager.getImage(Applications.class, "/org/plum/icon/icon.jpg"));
 		shlMybatisgenerator.setSize(1105, 767);
 		shlMybatisgenerator.setText("MybatisGenerator");
 		shlMybatisgenerator.setLayout(null);
 		
 		Label label_6 = new Label(shlMybatisgenerator, SWT.NONE);
-		label_6.setImage(SWTResourceManager.getImage("C:\\Users\\Plum\\Desktop\\mybatis-logo.png"));
+		label_6.setImage(SWTResourceManager.getImage(Applications.class, "/org/plum/icon/mybatis-logo.png"));
 		label_6.setBounds(93, 10, 369, 116);
 		
 		Group group_db = new Group(shlMybatisgenerator, SWT.NONE);
@@ -577,7 +577,7 @@ public class Applications {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				try {
-					Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler https://www.cnblogs.com/plumsq/");
+					Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler https://www.cnblogs.com/plumsq/p/11222057.html");
 				} catch (IOException e1) {
 					e1.printStackTrace();
 				}
